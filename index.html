@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Anniversary</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <!-- Floating Hearts Background Animation -->
+    <div class="floating-hearts" id="floating-hearts"></div>
+    
+    <!-- Corner Hearts -->
+    <div class="heart-corner heart-top-left"><i class="fas fa-heart"></i></div>
+    <div class="heart-corner heart-top-right"><i class="fas fa-heart"></i></div>
+    <div class="heart-corner heart-bottom-left"><i class="fas fa-heart"></i></div>
+    <div class="heart-corner heart-bottom-right"><i class="fas fa-heart"></i></div>
+    <!-- Step 1: Login Page -->
+    <div id="step1" class="step active">
+        <div class="card">
+            <h2><i class="fas fa-heart love-icon"></i> Our Anniversary <i class="fas fa-heart love-icon"></i></h2>
+            <div class="form-group">
+                <label for="anniversary-date">When did we start dating?</label>
+                <input type="date" id="anniversary-date" required>
+            </div>
+            <button id="step1-next" class="btn">Next <i class="fas fa-heart"></i></button>
+        </div>
+    </div>
+
+    <!-- Step 2: First Modal -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <img src="assets/gambar5.jpeg" alt="Romantic couple embracing at sunset">
+            <p><i class="fas fa-heart love-icon"></i> This is the beginning of our love journey 💕 <i class="fas fa-heart love-icon"></i></p>
+            <button id="modal1-next" class="btn">Next <i class="fas fa-heart"></i></button>
+        </div>
+    </div>
+
+    <!-- Step 3: Image and Text Page -->
+    <div id="step3" class="step">
+        <div class="two-column">
+            <div class="column">
+                <img src="assets/gambar6.jpeg" alt="Us Together">
+            </div>
+            <div class="column">
+                <div class="text-content">
+                    <h2><i class="fas fa-heart love-icon"></i> My Love <i class="fas fa-heart love-icon"></i></h2>
+                    <p>Thank you for being with me this far. You are the best thing that has ever happened to me.</p>
+                    <p>Every moment with you is precious, and I cherish all our memories together.</p>
+                    <button id="step3-next" class="btn">Next <i class="fas fa-heart"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <!-- Step 4: Second Modal -->
+<div id="modal2" class="modal">
+    <div class="modal-content">
+        <h2><i class="fas fa-heart love-icon"></i> Happy Anniversary Mas Nolenn! <i class="fas fa-heart love-icon"></i></h2>
+        <p>Every day with you is a gift. I'm so lucky to have you in my life.</p>
+        <p>Happy Anniversary, my love! 💖</p>
+        <button id="modal2-next" class="btn">Next <i class="fas fa-heart"></i></button>
+
+        <!-- Tombol Unduh PDF -->
+        <a href="assets/Happy Anniversary mass nollenn 🤍.pdf" download class="btn" id="modal2-download">
+            Unduh <i class="fas fa-download"></i>
+        </a>
+    </div>
+</div>
+
+
+    <!-- Step 5: Gallery -->
+    <div id="step5" class="step">
+        <div class="gallery-container">
+            <h2><i class="fas fa-heart love-icon"></i> Our Memories <i class="fas fa-heart love-icon"></i></h2>
+            
+            <div class="gallery">
+                <!-- DS Frame -->
+                <div class="ds-frame">
+                    <div class="ds-screen">
+                        <img src="assets/gambar1.jpeg" alt="Our first date memory">
+                    </div>
+                    <div class="ds-buttons">
+                        <div class="ds-dpad"></div>
+                        <div class="ds-action-buttons">
+                            <div class="ds-action-button"></div>
+                            <div class="ds-action-button"></div>
+                            <div class="ds-action-button"></div>
+                        </div>
+                    </div>
+                    <div class="heart-frames">
+                        <div class="heart-frame">
+                            <img src="assets/gambar2.jpeg" alt="Special dinner memory">
+                        </div>
+                        <div class="heart-frame">
+                            <img src="assets/gambar3.jpeg" alt="Memory 4">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Coffee Shop Frame -->
+                <div class="coffee-shop">
+                    <div class="window-frame">
+                        <div class="window-divider-v"></div>
+                        <div class="window-divider-h"></div>
+                        <img src="assets/gambar4.jpeg" alt="Movie night memory">
+                    </div>
+                    <div class="coffee-cups">
+                        <div class="coffee-cup"></div>
+                        <div class="coffee-cup"></div>
+                    </div>
+                    <div class="photo-strips">
+                        <div class="photo-strip">
+                            <img src="assets/gambar5.jpeg" alt="Memory 2">
+                            <img src="assets/gambar6.jpeg" alt="Memory 6">
+                        </div>
+                        <div class="photo-strip back">
+                            <img src="assets/gambar7.jpeg" alt="Our first date memory">
+                            <img src="assets/gambar8.jpeg" alt="Special dinner memory">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="decorative-elements">
+                <div class="bread"></div>
+                <div class="teddy"></div>
+                <div class="cookie"></div>
+                <div class="spoon"></div>
+            </div>
+            
+            <button id="step5-next" class="btn">Next <i class="fas fa-heart"></i></button>
+        </div>
+    </div>
+
+    <!-- Step 6: Quiz -->
+    <div id="step6" class="step">
+        <div class="quiz-container">
+            <h2><i class="fas fa-heart love-icon"></i> Love Quiz <i class="fas fa-heart love-icon"></i></h2>
+            <form id="quiz-form">
+                <div class="question">
+                    <p>1. Where did we first meet?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q1" value="a"> Coffee shop</label>
+                        <label><input type="radio" name="q1" value="b"> Through friends</label>
+                        <label><input type="radio" name="q1" value="c"> At school/work</label>
+                        <label><input type="radio" name="q1" value="d"> Online</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <p>2. What's my favorite food?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q2" value="a"> Pizza</label>
+                        <label><input type="radio" name="q2" value="b"> Sushi</label>
+                        <label><input type="radio" name="q2" value="c"> Pasta</label>
+                        <label><input type="radio" name="q2" value="d"> Burgers</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <p>3. When is my birthday?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q3" value="a"> January</label>
+                        <label><input type="radio" name="q3" value="b"> March</label>
+                        <label><input type="radio" name="q3" value="c"> July</label>
+                        <label><input type="radio" name="q3" value="d"> October</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <p>4. What's my favorite color?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q4" value="a"> Blue</label>
+                        <label><input type="radio" name="q4" value="b"> Red</label>
+                        <label><input type="radio" name="q4" value="c"> Green</label>
+                        <label><input type="radio" name="q4" value="d"> Purple</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <p>5. What's our song?</p>
+                    <div class="options">
+                        <label><input type="radio" name="q5" value="a"> Perfect - Ed Sheeran</label>
+                        <label><input type="radio" name="q5" value="b"> All of Me - John Legend</label>
+                        <label><input type="radio" name="q5" value="c"> Can't Help Falling in Love - Elvis Presley</label>
+                        <label><input type="radio" name="q5" value="d"> Thinking Out Loud - Ed Sheeran</label>
+                    </div>
+                </div>
+
+                <button type="submit" id="quiz-submit" class="btn">See Results <i class="fas fa-heart"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Final Results -->
+    <div id="results" class="step">
+        <div class="results-container">
+            <h2><i class="fas fa-heart love-icon"></i> Quiz Results <i class="fas fa-heart love-icon"></i></h2>
+            <div id="score-display"></div>
+            <div class="final-message">
+                <h3><i class="fas fa-heart love-icon"></i> Happy Anniversary! <i class="fas fa-heart love-icon"></i></h3>
+                <p>No matter the score, what matters is that we have each other. Here's to many more years together!</p>
+                <div class="heart-animation">❤️</div>
+                <div class="heart-animation" style="animation-delay: 0.5s; font-size: 40px;">💖</div>
+                <div class="heart-animation" style="animation-delay: 1s; font-size: 45px;">💘</div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
